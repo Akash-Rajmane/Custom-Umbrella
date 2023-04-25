@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial;
+    line-height: 1.3;
+}
+
+.container{
+    display: block;
+    width:100%;
+    height: 100vh;
+    background-color: rgb(224, 252, 253);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+} 
+
+.imgContainer{
+   display: block;
+   margin: auto;
+}
+
+.umbrella{
+    width: 465px;
+    height: 450px;
+    z-index: 1;
+    transition: all 0.05s;
+}
+
+.loader{
+    position: absolute;
+    z-index: 10;
+    margin-left:-260px;
+    margin-top: 200px;
+    width: 50px;
+    height: 50px;
+    opacity: 0; 
+    animation: rotate 2s linear infinite;
+    transition: all 0.5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
+
+.content{
+    display: block;
+    margin: auto;
+}
+
+.heading{
+    font-size: 54px;
+    margin-top: -80px;
+}
+
+.dots{
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.dot1{
+    height: 24px;
+    width: 24px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot2{
+    height: 24px;
+    width: 24px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot3{
+    height: 24px;
+    width: 24px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dots1:hover{
+    cursor: pointer;
+}
+
+.dots2:hover{
+    cursor: pointer;
+}
+
+.dots3:hover{
+    cursor: pointer;
+}
+
+.subHeading{
+    font-size: 24px;
+}
+
+.text{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.subText{
+    color: rgba(0, 0, 0,0.8);
+    margin: 5px 0;
+}
+
+.icon{
+    float: left;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.btnText{
+    position: absolute;
+    margin-left: -75px; 
+    margin-top: 10px;
+}
+
+
+input{
+    display: none;
+}
+
+label{
+    display: block;
+    width: 450px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(57, 146, 235);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    border: none;
+    text-align: center;
+}
+
+.logo{
+    position: relative;
+    z-index: 15;
+    top: -25px;
+    left: -260px;
+    opacity: 0;
+}

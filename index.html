@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Custom Umbrella</title>
+</head>
+<body>
+    <main class="container">
+        <section class="grid">
+            <div class="imgContainer">
+                <img id="img" src="./assets/Blue umbrella.png" alt="Blue Umbrella" class="umbrella"/>
+                <img id="loader" src="./assets/loader_icon.svg" class="loader">
+                <img src="" alt="logo" class="logo" id="brandLogo"/>
+            </div>
+            <div class="content">
+                <h1 class="heading">Custom Umbrella</h1>
+                <div class="dots">
+                    <span class="dot1" onclick=changeImageToBlue()></span>
+                    <span class="dot2" onclick=changeImageToPink()></span>
+                    <span class="dot3" onclick=changeImageToYellow()></span>
+                </div>
+                <h3 class="subHeading">Customize your umbrella</h3>
+                <p class="text">Upload a logo for an instant preview</p>
+                <p class="subText">
+                    .png and .jpg files only. Max file size is 5MB.
+                </p>
+                <label for="input">
+                    <span class="icon"><img src="./assets/upload_icon.svg" alt="upload icon" /></span><span class="btnText">UPLOAD LOGO</span>
+                    <input id="input" type="file" accept="image/*" onchange="loadFile(event)">
+                </label>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
