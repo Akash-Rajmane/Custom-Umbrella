@@ -70,41 +70,42 @@
     margin-bottom: 20px;
 }
 
-.dot1{
+#dot1{
     height: 24px;
     width: 24px;
     background-color: dodgerblue;
     border-radius: 50%;
-    display: inline-block;
+    border: 3px solid rgb(138, 194, 250);
 }
 
-.dot2{
+#dot2{
     height: 24px;
     width: 24px;
     background-color: pink;
     border-radius: 50%;
-    display: inline-block;
+    border: 3px solid rgb(253, 216, 223)
 }
 
-.dot3{
+#dot3{
     height: 24px;
     width: 24px;
     background-color: yellow;
     border-radius: 50%;
-    display: inline-block;
+    border: 3px solid rgb(250, 250, 136);
 }
 
-.dots1:hover{
+#dot1:hover{
     cursor: pointer;
 }
 
-.dots2:hover{
+#dot2:hover{
     cursor: pointer;
 }
 
-.dots3:hover{
+#dot3:hover{
     cursor: pointer;
 }
+
 
 .subHeading{
     font-size: 24px;
@@ -157,4 +158,8 @@ label{
     top: -25px;
     left: -260px;
     opacity: 0;
+}
+
+label:hover{
+    cursor: pointer;
 }
